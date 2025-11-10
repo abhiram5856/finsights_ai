@@ -1,4 +1,5 @@
 import sys, os, time, hashlib, re 
+import yfinance as yf
 try:
     sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 except NameError:
@@ -602,4 +603,5 @@ def main():
     pages.get(st.session_state.page, page_home)()
 
 if __name__ == "__main__":
+
     main()
